@@ -8,63 +8,66 @@
     <title>Petshop</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+    <!-- header -->
+
     <header>
         <!-- Barra superior -->
-        <div>
+        <div class="header-top">
             <span>Grandes ofertas en comederos</span>
             <!-- Menu regional -->
-            <div>
-                <ul type="none">
-                    <li>Español v</li>
-                    <li>ARG$ v</li>
-                </ul>
-            </div>
-            <!-- Barra naranja -->
-            <div>
+           
+            <ul>
+                <li><a href="#"> Español <i class="fas fa-angle-down"></i></a></li>
+                <li><a href="#"> ARG$ <i class="fas fa-angle-down"></i></a></li>
+            </ul>
+        </div>
+        <!-- Barra naranja -->
+        <div class="header-bottom">
                 <!-- Imagen logo -->
-                <span>
-                    <h1>
-                        <a href="index.html">
-                            <img src="img/cat-1.svg" alt="Dibujo de gatito">
-                            <span>Front</span><span>Cat&Dog</span>
-                            <img src="img/dog-1.svg" alt="Dibujo de perrito">
-                        </a>
-                    </h1>
-                </span>
-                <!-- Menu principal -->
+                <h1>
+                    <a href="index.html">
+                        <img src="img/cat-1.svg" alt="Dibujo de gatito"><span class="logo-front">Front</span><span class="logo-cat-and-dog">Cat&Dog</span><img src="img/dog-1.svg" alt="Dibujo de perrito">
+                    </a>
+                </h1>
+                <!-- Nav Bar -->
                 <nav>
-                    <ul type="none">
+                    <ul>
                         <li>
                             <a href="categorias.html">
-                                <img src="img/pawprint-1-blanco.svg" alt="Icono de huella de perro">Categorías
+                                <i class="fas fa-paw"></i> Categorías
                             </a>
                         </li>
                         <li>
                             <a href="pets.html">
-                                <img src="img/pawprint-1-blanco.svg" alt="Icono de huella de perro">Pets
+                                <i class="fas fa-paw"></i> Pets
                             </a>
                         </li>
                         <li>
                             <a href="nosotros.html">
-                                <img src="img/pawprint-1-blanco.svg" alt="Icono de huella de perro">Nosotros
+                                <i class="fas fa-paw"></i> Nosotros
                             </a>
                         </li>
                         <li>
                             <a href="contactanos.html">
-                                <img src="img/pawprint-1-blanco.svg" alt="Icono de huella de perro">Contactanos
+                                <i class="fas fa-paw"></i> Contactanos
                             </a>
                         </li>
                     </ul>
                 </nav>
-            </div>
+        </div>
     </header>
+
+<!-- main -->
+
     <main>
         <!-- Seccion Banner -->
-        <section>
-            <img src="img/bowl-and-pet-daities-on-green-background-1.png" alt="Bowl con comida de perro en fondo verde">
+        <section class="banner">
             <h2>¡Es un placer tenerte aquí!</h2>
             <p>¡Comederos en descuento!</p>
             <a href="#">COMEDEROS</a>
@@ -94,7 +97,27 @@
         </section>
     </main>
     <footer>
-        <p>Todos los derechos reservados Front End</p>
+        <div class="footer-top">
+            <div class="localidad">
+                <a href="https://goo.gl/maps/VRVApc3Nw9xPejjFA" target="_blank"><img src="img/icono-location.svg" alt="Icono de ubicación"></a>
+                <span class="titulo">Localidad</span><br><span class="dato">Calle - provincia</span>
+            </div>
+            <div class="telefono">
+                <a href="tel:1155555555"><img src="img/icono-telefono.svg" alt="Icono de teléfono"></a>
+                <span class="titulo">Teléfono</span><br><span class="dato">(011) 5555-5555</span>   
+            </div>
+            <div class="e-mail">
+                <a href="mailto:dogandcat@gmail.com"><img src="img/icono-correo.svg" alt="Icono de correo"></a>
+                <span class="titulo">Correo Electrónico</span><br>
+                <span>
+                    <a href="mailto:dogandcat@gmail.com">dogandcat@gmail.com</a>
+                </span>
+            </div>
+            <a href="index.html"><img src="img/cat-1.svg" alt="Dibujo de gatito"><span class="logo-front">Front</span><span class="logo-cat-and-dog">Cat&Dog</span><img src="img/dog-1.svg" alt="Dibujo de perrito"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>Todos los derechos reservados Front End</p>
+        </div>
     </footer>
 </body>
 

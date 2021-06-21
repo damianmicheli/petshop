@@ -1,0 +1,70 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* header  */
+.header-top {
+    background-color: #222222;
+    color: #F3F3F3;
+    font-size: 10px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+.header-bottom {
+    background-color: #F0A83E;
+}
+
+.logo-front, .logo-cat-and-dog{
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo-front{
+    color: #3C2313
+}
+.logo-cat-and-dog {
+    color: #FFFFFF;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+/* banner */
+
+.banner{
+    background: #89d0a5 url("../img/bowl-and-pet-daities-on-green-background-1.png") no-repeat;
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30;
+    color: #3C2313;
+    background-color: #FFFFFF;
+}
+
+h1 a {
+    text-decoration: none;
+ }
+
+
+
+.logo-front {
+    color:#3C2313;
+
+}
