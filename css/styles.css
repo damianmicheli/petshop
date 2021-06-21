@@ -1,70 +1,161 @@
-/* Importar fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/*--- Importar fuentes e iconos ----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
-body{
+/*--- Etiquetas globales ------------------------*/
+body {
     margin:0;
     font-family: 'Roboto', sans-serif; 
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-/* header  */
+/*--- HEADER --------------------------------- */
+
+/* TOP */
 .header-top {
     background-color: #222222;
     color: #F3F3F3;
     font-size: 10px;
 }
 
-header ul li a{
-    text-decoration: none;
+header ul li a {
     color: #F3F3F3;
+    text-decoration: none;
 }
 
+/* BOTTOM */
 .header-bottom {
     background-color: #F0A83E;
 }
 
-.logo-front, .logo-cat-and-dog{
+/* Logo */
+h1 a {
+    text-decoration: none;
+ }
+
+h1 .logo-front, h1 .logo-cat-and-dog {
     font-size: 20px;
     font-weight: bold;
 }
-.logo-front{
+
+h1 .logo-front {
     color: #3C2313
 }
-.logo-cat-and-dog {
+
+h1 .logo-cat-and-dog {
     color: #FFFFFF;
 }
 
-nav ul li a{
-    text-decoration: none;
+/*  Menu  */
+nav ul li a {
     color: #FFFFFF;
     font-size: 13px;
+    text-decoration: none;
 }
 
-/* banner */
+/*--- MAIN ----------------------------------*/
 
-.banner{
+/* Seccion Banner */
+.banner {
     background: #89d0a5 url("../img/bowl-and-pet-daities-on-green-background-1.png") no-repeat;
     background-size: cover;
     height: 450px;
     text-align: center;
 }
 
-h2 {
-    font-size: 30;
+.banner h2 {
     color: #3C2313;
     background-color: #FFFFFF;
+    font-size: 30px;
 }
 
-h1 a {
+.banner p {
+    color: #3C2313;
+    font-size: 16px;
+}
+
+.banner a {
     text-decoration: none;
- }
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #F0A83E;
+}
 
+/* Seccion Productos */
 
+/* TOP */
+.productos-top {
+    text-align: center;
+}
+.productos-top h2 {
+    color: #3C2313;
+    font-size: 40px;
+    font-weight: bold;
+}
+.productos-top p { 
+    color: #666666;
+    font-size: 15px;
+}
 
-.logo-front {
-    color:#3C2313;
+/* Cards */
 
+.card {
+    background-color: #FBFAF6;
+    color: #F0A83E;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card h3 {
+    color: #3C2313;
+}
+
+/*--- FOOTER --------------------------------------*/
+
+.footer-top {
+    background-color: #3C2313; 
+    font-weight: bold;
+}
+
+.titulo {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.dato {
+    color: #8A8787;
+    font-size: 10px;
+}
+
+/* .dato a {
+    color: #8A8787;
+    text-decoration: none;
+} */
+
+.e-mail a {
+    color: #8A8787
+}
+
+.footer-logo a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-logo a .logo-front {
+    color: #FFFFFF;
+}
+
+.footer-logo a .logo-cat-and-dog {
+    color: #F0A83E;
+}
+
+.footer-bottom {
+    background-color: #222222;
+    color: #FFFFFF;
+    font-size: 10px;
+    text-align: center;
 }
