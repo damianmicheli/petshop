@@ -3,13 +3,17 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 /*--- Etiquetas globales ------------------------*/
-body {
+/* Propiedades generales */
+* {
+    box-sizing: border-box;
     margin:0;
-    font-family: 'Roboto', sans-serif; 
+    padding: 0;
 }
+a {text-decoration: none;}
+ul {list-style-type: none;}
 
-ul {
-    list-style-type: none;
+body {
+    font-family: 'Roboto', sans-serif; 
 }
 
 /*--- HEADER --------------------------------- */
@@ -64,12 +68,15 @@ nav ul li a {
     background-size: cover;
     height: 450px;
     text-align: center;
+    position: relative;
 }
 
 .banner h2 {
     color: #3C2313;
     background-color: #FFFFFF;
     font-size: 30px;
+    display: inline-block;
+
 }
 
 .banner p {
