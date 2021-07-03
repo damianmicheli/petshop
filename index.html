@@ -19,22 +19,21 @@
         <!-- Barra superior -->
         <div class="header-top">
             <div class="container">
-            <span>Grandes ofertas en comederos</span>
-            <!-- Menu regional -->
-           
-            <ul class="menu-top">
-                <li><a href="#"> Español <i class="fas fa-angle-down"></i></a></li>
-                <li><a href="#"> ARG$ <i class="fas fa-angle-down"></i></a></li>
-            </ul>
-        </div>
+                <p>Grandes ofertas en comederos</p>
+                <!-- Menu regional -->
+                <ul class="menu-top">
+                    <li><a href="#"> Español <i class="fas fa-angle-down"></i></a></li>
+                    <li><a href="#"> ARG$ <i class="fas fa-angle-down"></i></a></li>
+                </ul>
+            </div>
         </div>
         <!-- Barra naranja -->
         <div class="header-bottom">
             <div class="container">
                 <!-- Imagen logo -->
-                
-                    <a href="index.html">
-                        <div class="logo">
+
+                <a href="index.html">
+                    <div class="logo">
 
                         <img src="img/cat-1.svg" alt="Dibujo de gatito">
                         <h1><span class="logo-front">Front</span><span class="logo-cat-and-dog">Cat&Dog</span></h1>
@@ -43,7 +42,7 @@
                 </a>
                 <!-- Nav Bar -->
                 <nav>
-                    <ul class="menu">
+                    <ul class="nav-menu">
                         <li>
                             <a href="#">
                                 <i class="fas fa-paw"></i> Categorías
@@ -66,18 +65,22 @@
                         </li>
                     </ul>
                 </nav>
-        </div>
+            </div>
         </div>
     </header>
 
-<!-- main -->
+    <!-- main -->
 
     <main>
         <!-- Seccion Banner -->
         <section class="banner">
-            <h2>¡Es un placer tenerte aquí!</h2>
-            <p>¡Comederos en descuento!</p>
-            <a href="#">COMEDEROS</a>
+            <div class="banner-container">
+                <div class="banner-text">
+                    <h2>¡Es un placer tenerte aquí!</h2>
+                    <p>¡Comederos en descuento!</p>
+                    <a href="#">COMEDEROS</a>
+                </div>
+            </div>
         </section>
         <!-- Seccion Productos -->
         <section class="productos">
@@ -88,44 +91,61 @@
                 <p>Comederos - Accesorios - Comida</p>
             </div>
             <!-- Cards -->
-            <div class="card">
-                <img src="img/churrasquito.png" alt="Jueguete de perro forma de churrasco">
-                <h3>Juguete Churrasquito</h3>
-                <p>$150</p>
-            </div>
-            <div class="card">
-                <img src="img/comedero.png" alt="Comedero para perro">
-                <h3>Comedero para perro</h3>
-                <p>$250</p>
-            </div>
-            <div class="card">
-                <img src="img/huesito-1.png" alt="Jueguete de perro forma de huesito">
-                <h3>Juguete Huesito</h3>
-                <p>$650</p>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="img/churrasquito.png" alt="Jueguete de perro forma de churrasco">
+                    <h3>Juguete Churrasquito</h3>
+                    <p>$150</p>
+                </div>
+                <div class="card">
+                    <img src="img/comedero.png" alt="Comedero para perro">
+                    <h3>Comedero para perro</h3>
+                    <p>$250</p>
+                </div>
+                <div class="card">
+                    <img src="img/huesito-1.png" alt="Jueguete de perro forma de huesito">
+                    <h3>Juguete Huesito</h3>
+                    <p>$650</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-top">
-            <div class="localidad">
-                <a href="https://goo.gl/maps/VRVApc3Nw9xPejjFA" target="_blank"><img src="img/icono-location.svg" alt="Icono de ubicación"></a>
-                <br><span class="titulo">Localidad</span><br><span class="dato">Calle - provincia</span>
+            <div class="container">
+                <div class="footer-datos">
+                    <div class="footer-dato">
+                        <i class="fas fa-map-marked-alt icono"></i>
+                        <div>
+                            <h2>Localidad</h2>
+                            <p>Calle - provincia</p>
+                        </div>
+                    </div>
+                    <div class="footer-dato">
+                        <i class="fas fa-phone-volume icono"></i>
+                        <div>
+                            <h2>Teléfono</h2>
+                            <p>(011) 5555-5555</p>
+                        </div>
+                    </div>
+                    <div class="footer-dato">
+                        <i class="fas fa-envelope icono"></i>
+                        <div>
+                            <h2>Correo Electrónico</h2>
+                            <p><a href="mailto:dogandcat@gmail.com">dogandcat@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/cat-1.svg" alt="Dibujo de gatito">
+                        <span class="logo-front">Front</span>
+                        <span class="logo-cat-and-dog">Cat&Dog</span>
+                        <img src="img/dog-1.svg" alt="Dibujo de perrito">
+                    </a>
+                </div>
             </div>
-            <div class="telefono">
-                <a href="tel:1155555555"><img src="img/icono-telefono.svg" alt="Icono de teléfono"></a>
-                <br><span class="titulo">Teléfono</span><br><span class="dato">(011) 5555-5555</span>   
-            </div>
-            <div class="e-mail">
-                <a href="mailto:dogandcat@gmail.com"><img src="img/icono-correo.svg" alt="Icono de correo"></a>
-                <br><span class="titulo">Correo Electrónico</span>
-                <br><span class="dato">
-                    <a href="mailto:dogandcat@gmail.com">dogandcat@gmail.com</a>
-                </span>
-            </div>
-            <br>
-            <div class="footer-logo">
-                <a href="index.html"><img src="img/cat-1.svg" alt="Dibujo de gatito"><span class="logo-front">Front</span><span class="logo-cat-and-dog">Cat&Dog</span><img src="img/dog-1.svg" alt="Dibujo de perrito"></a>
-            </div>
+
         </div>
         <div class="footer-bottom">
             <p>Todos los derechos reservados Front End</p>

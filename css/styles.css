@@ -8,6 +8,7 @@
 }
 
 /*--- Etiquetas globales ------------------------*/
+
 /* Propiedades generales */
 
 * {
@@ -24,37 +25,41 @@ ul {list-style-type: none;}
 body {
     font-family: 'Roboto', sans-serif; 
 }
-.container{
+
+.container {
     max-width: var(--ancho-maximo);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
+
 /*--- HEADER --------------------------------- */
 
 /* TOP */
 .header-top {
     background-color: #222222;
     color: #F3F3F3;
-    font-size: 10px;
-    padding: 4px;
-
+    font-size: 0.625rem;
+    padding: 0.25rem;
 }
 
 .menu-top {
     display: flex;
+    gap: 1rem;
 }
 
-.menu { 
+.nav-menu { 
     display: flex;
-    gap:15px;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .logo { 
     display: flex;
     align-items: center;
-
+    gap: 0.25rem;
+    padding: 0.25rem;
 }
 
 /* BOTTOM */
@@ -63,17 +68,16 @@ body {
 }
 
 /* Logo */
-h1 a {
-    text-decoration: none;
- }
 
-h1 .logo-front, h1 .logo-cat-and-dog {
-    font-size: 20px;
+
+h1 {
+    font-size: 1.25rem;
     font-weight: bold;
+    margin-block-end: 0.25rem;
 }
 
 h1 .logo-front {
-    color: #3C2313
+    color: #3C2313;
 }
 
 h1 .logo-cat-and-dog {
@@ -81,10 +85,9 @@ h1 .logo-cat-and-dog {
 }
 
 /*  Menu  */
-nav ul li a {
+.nav-menu a {
     color: #FFFFFF;
-    font-size: 13px;
-    text-decoration: none;
+    font-size: 0.85rem;
 }
 
 /*--- MAIN ----------------------------------*/
@@ -93,40 +96,61 @@ nav ul li a {
 .banner {
     background: #89d0a5 url("../img/bowl-and-pet-daities-on-green-background-1.png") no-repeat;
     background-size: cover;
-    height: 450px;
-    text-align: center;
+    background-position:center;
+    height: 28rem;
+}
+
+.banner-container {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    height: 100%;
     position: relative;
 }
 
+.banner-text {
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 4.5rem);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 .banner h2 {
     color: #3C2313;
     background-color: #FFFFFF;
-    font-size: 30px;
-    display: inline-block;
-    position: absolute;
-    top: 100px;
-
-
+    font-size: 2rem;
+    padding: 0.75rem;
+    border-radius: 5px;
 
 }
 
 .banner p {
     color: #3C2313;
-    font-size: 16px;
+    font-size: 1rem;
+    padding: 1rem;
 }
 
 .banner a {
-    text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     color: #FFFFFF;
     background-color: #F0A83E;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+    display: inline-block;
 }
 
 /* Seccion Productos */
+.productos {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 1rem;
+}
 
 /* TOP */
 .productos-top {
     text-align: center;
+    padding: 1.25rem;
 }
 .productos-top h2 {
     color: #3C2313;
@@ -135,17 +159,25 @@ nav ul li a {
 }
 .productos-top p { 
     color: #666666;
-    font-size: 15px;
+    font-size: 1rem;
+    padding: 1.25rem;
 }
 
 /* Cards */
-
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    
+}
 .card {
     background-color: #FBFAF6;
     color: #F0A83E;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: center;
+    padding: 0.4rem;
 }
 
 .card h3 {
@@ -156,31 +188,62 @@ nav ul li a {
 
 .footer-top {
     background-color: #3C2313; 
+
+}
+
+
+.footer-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem;
+}
+
+.footer-dato {
+    display: flex;
+    align-items: center;
+}
+
+.footer-dato > div {
+    padding: 1rem;
     font-weight: bold;
 }
 
-.titulo {
+.icono {
+    font-size: 2rem;
+    color: white;
+    border: 0.25rem solid #786960;
+    height: 4rem;
+    width: 4rem;
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #8a8787;
+    border-radius: 50%;
+    background-image: linear-gradient( to bottom, #ceb5a6, #413733 ); 
+}
+
+.footer-dato h2 {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
-.dato {
+.footer-dato p {
     color: #8A8787;
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
-/* .dato a {
-    color: #8A8787;
-    text-decoration: none;
-} */
-
-.e-mail a {
+.footer-dato a {
     color: #8A8787
 }
 
+.footer-logo {
+    font-weight: bold;
+    padding: 1.25rem;
+}
+
 .footer-logo a {
-    text-decoration: none;
     font-size: 20px;
+
 }
 
 .footer-logo a .logo-front {
@@ -193,7 +256,13 @@ nav ul li a {
 
 .footer-bottom {
     background-color: #222222;
-    color: #FFFFFF;
-    font-size: 10px;
-    text-align: center;
 }
+
+.footer-bottom p {
+    color: #FFFFFF;
+    font-size: 0.625rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.25rem;
+}
+
