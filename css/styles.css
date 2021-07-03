@@ -59,7 +59,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    padding: 0.25rem;
+    padding: 1rem;
 }
 
 /* BOTTOM */
@@ -90,6 +90,9 @@ h1 .logo-cat-and-dog {
     font-size: 0.85rem;
 }
 
+.hamburger-btn {
+    display: none;
+}
 /*--- MAIN ----------------------------------*/
 
 /* Seccion Banner */
@@ -264,5 +267,40 @@ h1 .logo-cat-and-dog {
     text-align: center;
     font-weight: bold;
     padding: 0.25rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .header-top {
+        display: none;
+    }   
+
+    .hamburger-btn{
+       display:initial;
+       color: #FFFFFF;
+       font-size: 0.85rem;
+       padding: 1rem;
+    }
+
+    .nav-menu {
+       display:none;
+    }
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner-text {
+        position: initial;
+        padding-top: 9rem;
+   }
+
+   .footer-top>.container {
+    flex-direction: column;
+}
+.footer-logo {
+    order: -1;
+}
+
 }
 
