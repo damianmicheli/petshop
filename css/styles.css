@@ -294,7 +294,10 @@ h1 .logo-cat-and-dog {
         position: initial;
         padding-top: 9rem;
    }
-
+   .banner {
+   background-position-x: -40px;
+   }
+   
    .footer-top>.container {
     flex-direction: column;
 }
