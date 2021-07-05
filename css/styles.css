@@ -187,6 +187,22 @@ h1 .logo-cat-and-dog {
     color: #3C2313;
 }
 
+/* Seccion Contacto */
+.contacto {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.formulario {
+
+    display:flex;
+    flex-direction: column;
+
+
+}
+
+
 /*--- FOOTER --------------------------------------*/
 
 .footer-top {
