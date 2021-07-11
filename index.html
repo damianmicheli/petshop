@@ -34,7 +34,6 @@
 
                 <a href="index.html">
                     <div class="logo">
-
                         <img src="img/cat-1.svg" alt="Dibujo de gatito">
                         <h1><span class="logo-front">Front</span><span class="logo-cat-and-dog">Cat&Dog</span></h1>
                         <img src="img/dog-1.svg" alt="Dibujo de perrito">
@@ -44,24 +43,16 @@
                 <nav>
                     <ul class="nav-menu">
                         <li>
-                            <a href="#">
-                                <i class="fas fa-paw"></i> Categorías
-                            </a>
+                            <a href="#">Categorías</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fas fa-paw"></i> Pets
-                            </a>
+                            <a href="#">Pets</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fas fa-paw"></i> Nosotros
-                            </a>
+                            <a href="#">Nosotros</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fas fa-paw"></i> Contactanos
-                            </a>
+                            <a href="#">Contactanos</a>
                         </li>
                     </ul>
                 </nav>
@@ -113,21 +104,34 @@
             </div>
         </section>
         <section class="contacto">
-
-            <form class="formulario" action="resultado.html" method="POST">
-                <label>Contáctanos </label>
-                <input type="text" name="nombre" placeholder="Nombre y apellido">
-                <input type="email" name="email" placeholder="Ingresá tu correo electrónico">
-                <input type="tel" name="telefono" placeholder="Teléfono">
-                <div class="form-botones">
-                <button class="reset" type="reset">Resetear</button>
-                <button type="submit">Enviar</button>
-                </div>
-            </form>
-
+                <h2>Contáctanos</h2>
+                <form class="formulario" action="resultado.html" method="POST">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input class="input-text" type="text" name="nombre" id="nombre" placeholder="Juan Perez">
+                    <label for="email">Ingresá tu correo electrónico:</label>
+                    <input class="input-text" type="email" name="email" id="email" placeholder="juanperez@mail.com">
+                    <label for="telefono">Teléfono:</label>
+                    <input class="input-text" type="tel" name="telefono" id="telefono" placeholder="5555-5555">
+                    <div class="form-botones">
+                        <input class="boton" type="reset" value="Resetear">
+                        <input class="boton" type="submit" value="Enviar">
+                    </div>
+                </form>
         </section>
     </main>
     <footer>
+        <div class="suscripcion">
+            <div class="suscripcion-container">
+                <div class="novedades">
+                    <img src="img/enviar-mail.svg" alt="Icono envio de correo">
+                    <p>Suscríbete para más novedades</p>
+                </div>
+                <form class="form-sus" action="#" method="POST">
+                    <input type="email" placeholder="Ingresá tu correo electrónico" name="emailsus">
+                    <input type="submit" value="Suscribirme">
+                </form>
+            </div>
+        </div>
         <div class="footer-top">
             <div class="container">
                 <div class="footer-datos">
@@ -155,10 +159,7 @@
                 </div>
                 <div class="footer-logo">
                     <a href="index.html">
-                        <img src="img/cat-1.svg" alt="Dibujo de gatito">
-                        <span class="logo-front">Front</span>
-                        <span class="logo-cat-and-dog">Cat&Dog</span>
-                        <img src="img/dog-1.svg" alt="Dibujo de perrito">
+                        <img src="img/cat-1.svg" alt="Dibujo de gatito"><span class="logo-front">Front</span><span class="logo-cat-and-dog">Cat&Dog</span><img src="img/dog-1.svg" alt="Dibujo de perrito">
                     </a>
                 </div>
             </div>

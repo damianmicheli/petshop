@@ -5,8 +5,13 @@
 /* Variable */
 :root{
     --ancho-maximo: 1024px;
+    --color-primario: #3C2313;
+    --color-secundario:#F0A83E;
+    --color-header-footer: #222222;
+    --color-texto: #FFFFFF;
+    --color-dato: #8A8787;
+    --color-banner: #89d0a5;
 }
-
 /*--- Etiquetas globales ------------------------*/
 
 /* Propiedades generales */
@@ -22,9 +27,7 @@ a {
 }
 ul {list-style-type: none;}
 
-body {
-    font-family: 'Roboto', sans-serif; 
-}
+body {font-family: 'Roboto', sans-serif;}
 
 .container {
     max-width: var(--ancho-maximo);
@@ -38,7 +41,7 @@ body {
 
 /* TOP */
 .header-top {
-    background-color: #222222;
+    background-color: var(--color-header-footer);
     color: #F3F3F3;
     font-size: 0.625rem;
     padding: 0.25rem;
@@ -64,7 +67,7 @@ body {
 
 /* BOTTOM */
 .header-bottom {
-    background-color: #F0A83E;
+    background-color: var(--color-secundario);
 }
 
 /* Logo */
@@ -77,17 +80,21 @@ h1 {
 }
 
 h1 .logo-front {
-    color: #3C2313;
+    color: var(--color-primario);
 }
 
 h1 .logo-cat-and-dog {
-    color: #FFFFFF;
+    color: var(--color-texto);
 }
 
 /*  Menu  */
 .nav-menu a {
-    color: #FFFFFF;
+    color: var(--color-texto);
     font-size: 0.85rem;
+}
+
+.nav-menu a::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1b0  ";
 }
 
 .hamburger-btn {
@@ -97,7 +104,7 @@ h1 .logo-cat-and-dog {
 
 /* Seccion Banner */
 .banner {
-    background: #89d0a5 url("../img/bowl-and-pet-daities-on-green-background-1.png") no-repeat;
+    background: var(--color-banner) url("../img/bowl-and-pet-daities-on-green-background-1.png") no-repeat;
     background-size: cover;
     background-position:center;
     height: 28rem;
@@ -119,8 +126,8 @@ h1 .logo-cat-and-dog {
     align-items: center;
 }
 .banner h2 {
-    color: #3C2313;
-    background-color: #FFFFFF;
+    color: var(--color-primario);
+    background-color: var(--color-texto);
     font-size: 2rem;
     padding: 0.75rem;
     border-radius: 5px;
@@ -128,15 +135,15 @@ h1 .logo-cat-and-dog {
 }
 
 .banner p {
-    color: #3C2313;
+    color: var(--color-primario);
     font-size: 1rem;
     padding: 1rem;
 }
 
 .banner a {
     font-size: 1rem;
-    color: #FFFFFF;
-    background-color: #F0A83E;
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
     padding: 1rem 1.5rem;
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0,0,0,0.25);
@@ -156,7 +163,7 @@ h1 .logo-cat-and-dog {
     padding: 1.25rem;
 }
 .productos-top h2 {
-    color: #3C2313;
+    color: var(--color-primario);
     font-size: 40px;
     font-weight: bold;
 }
@@ -176,7 +183,7 @@ h1 .logo-cat-and-dog {
 }
 .card {
     background-color: #FBFAF6;
-    color: #F0A83E;
+    color: var(--color-secundario);
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
@@ -184,64 +191,73 @@ h1 .logo-cat-and-dog {
 }
 
 .card h3 {
-    color: #3C2313;
+    color: var(--color-primario);
 }
 
 /* Seccion Contacto */
-.contacto {
-    max-width: var(--ancho-maximo);
-    margin: 0 auto;
-    padding: 1rem;
-}
 
 .formulario {
-
     display:flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
-
-
+    max-width: 340px;
+    margin: 0 auto;
 }
 
-.formulario>label {
-    color:#3C2313;
+label {
+    display:block;
+    font-weight: bold;
+    color:var(--color-primario);
+    font-size: 0.8rem;
+    align-self: self-start;
+}
+
+.contacto>h2 {
+    color:var(--color-primario);
     font-size: 25px;
     font-weight: bold;
-    padding: 10px;
+    padding: 2rem;
+    text-align: center;
 }
 
-input {
+.input-text{
     border: 0;
-    width: 340px;
+    width: 100%;
     height: 40px;
-    background-color: #3C2313;
-    color:#FFFFFF;
+    background-color: var(--color-primario);
+    color:var(--color-texto);
     border-radius: 15px;
     padding: 10px;
+    margin-bottom: 15px;
 }
 
-input:focus{
+    .input-text:focus{
     outline: none;
     background-color: #724d35;
     box-shadow: 0 5px 5px rgba(0,0,0,0.25);
-    border: solid #F0A83E 3px;
+    border: solid var(--color-secundario) 3px;
 }
 
-button {
+.boton{
     width: 110px;
     height: 34px;
     border-radius: 15px;
-    background-color:#F0A83E;
-    color:#FFFFFF;
+    background-color:var(--color-secundario);
+    color:var(--color-texto);
     border: 0;
     box-shadow: 0 5px 5px rgba(0,0,0,0.25);
 }
 
-.reset {
+input[type="reset"]{
     background-color:#8A8787;
 }
 
+.boton:hover {
+    position:relative;
+    bottom: 0.25rem;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+}
 
 .form-botones{
     display: flex;
@@ -252,9 +268,64 @@ button {
 
 /*--- FOOTER --------------------------------------*/
 
-.footer-top {
-    background-color: #3C2313; 
+/* Suscripcion */
+.suscripcion {
+    background-color: var(--color-secundario);
+}
 
+.suscripcion-container {
+    max-width: var(--ancho-maximo);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding:1rem;
+    gap: 10px;
+}
+
+.novedades {
+    display: flex;
+    font-weight: bold;
+    color: var(--color-texto);
+    font-size: 20px;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.novedades>img {
+    max-width: 40px;
+}
+
+
+.form-sus>input[type="email"]{
+    border-radius: 15px;
+    max-width: 270px;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    font-size: 10px;
+}
+
+.form-sus>input[type="email"]:focus{
+    outline: none;
+}
+
+.form-sus>input[type="submit"]{
+    background-color:var(--color-primario);
+    color: var(--color-texto);
+    border-radius: 15px;
+    width: 70px;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    font-size: 9px;
+    font-weight: bold;
+}
+
+/* Footer Top  */
+
+.footer-top {
+    background-color: var(--color-primario);
 }
 
 
@@ -277,29 +348,29 @@ button {
 
 .icono {
     font-size: 2rem;
-    color: white;
+    color: var(--color-texto);
     border: 0.25rem solid #786960;
     height: 4rem;
     width: 4rem;
     padding: 0.8rem;
     text-align: center;
-    background-color: #8a8787;
+    background-color: var(--color-dato);
     border-radius: 50%;
     background-image: linear-gradient( to bottom, #ceb5a6, #413733 ); 
 }
 
 .footer-dato h2 {
-    color: #FFFFFF;
+    color: var(--color-texto);
     font-size: 1.25rem;
 }
 
 .footer-dato p {
-    color: #8A8787;
+    color: var(--color-dato);
     font-size: 0.625rem;
 }
 
 .footer-dato a {
-    color: #8A8787
+    color: var(--color-dato);
 }
 
 .footer-logo {
@@ -313,19 +384,19 @@ button {
 }
 
 .footer-logo a .logo-front {
-    color: #FFFFFF;
+    color: var(--color-texto);
 }
 
 .footer-logo a .logo-cat-and-dog {
-    color: #F0A83E;
+    color: var(--color-secundario);
 }
 
 .footer-bottom {
-    background-color: #222222;
+    background-color: var(--color-header-footer);
 }
 
 .footer-bottom p {
-    color: #FFFFFF;
+    color: var(--color-texto);
     font-size: 0.625rem;
     text-align: center;
     font-weight: bold;
@@ -340,7 +411,7 @@ button {
 
     .hamburger-btn{
        display:initial;
-       color: #FFFFFF;
+       color: var(--color-texto);
        font-size: 0.85rem;
        padding: 1rem;
     }
@@ -368,5 +439,12 @@ button {
     order: -1;
 }
 
+.suscripcion-container {
+    flex-direction: column;
+    justify-content: center;
 }
 
+.form-sus {
+    margin: 0 auto;
+}
+}
