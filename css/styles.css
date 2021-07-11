@@ -299,7 +299,7 @@ input[type="reset"]{
 
 .form-sus>input[type="email"]{
     border-radius: 15px;
-    max-width: 270px;
+    width: 270px;
     padding: 10px;
     border: 0;
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
@@ -447,4 +447,5 @@ input[type="reset"]{
 .form-sus {
     margin: 0 auto;
 }
+
 }
