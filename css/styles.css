@@ -52,6 +52,10 @@ body {font-family: 'Roboto', sans-serif;}
     gap: 1rem;
 }
 
+.menu-top>li>a::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "  \f107";
+}
+
 .nav-menu { 
     display: flex;
     gap: 1rem;
@@ -71,7 +75,6 @@ body {font-family: 'Roboto', sans-serif;}
 }
 
 /* Logo */
-
 
 h1 {
     font-size: 1.25rem;
@@ -93,8 +96,33 @@ h1 .logo-cat-and-dog {
     font-size: 0.85rem;
 }
 
-.nav-menu a::before {
+.nav-menu>li>a::before {
     font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1b0  ";
+}
+
+.nav-menu>li {
+    position:relative;
+    transition: all 150ms;
+}
+.nav-menu>li::before{
+    content:'';
+    /* background-color:var(--color-texto); */
+    background-image: linear-gradient(to right, var(--color-texto), rgba(0,0,0,0));
+    position:absolute;
+    bottom:-4px; 
+    height: 0;
+    width: 0;
+    transition: width 300ms ;
+    border-radius: 50%;
+
+}
+.nav-menu>li:hover::before{
+    width: 100%;
+    height: 2px;
+} 
+
+.nav-menu>li:hover {
+    transform: scale(1.2);
 }
 
 .hamburger-btn {
@@ -425,7 +453,7 @@ input[type="reset"]{
     .hamburger-btn{
        display:initial;
        color: var(--color-texto);
-       font-size: 0.85rem;
+       font-size: 1rem;
        padding: 1rem;
     }
 
